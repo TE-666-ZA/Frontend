@@ -1,6 +1,7 @@
 import styles from './homework-page.module.css';
 import React, {useState} from 'react';
 import ThemeSwitcher from "../themeSwitcher/ThemeSwitcher";
+import {NavLink} from "react-router-dom";
 
 
 
@@ -26,6 +27,10 @@ function HomeworkPage() {
               navigation
 
             </nav>
+
+            <div>
+                <NavLink to={'homework10'} > homework10 </NavLink>
+            </div>
         </div>
     );
 }

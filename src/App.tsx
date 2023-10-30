@@ -9,6 +9,7 @@ function App() {
 <Routes>
   <Route path='/layouts' element={<Layout />} />
   <Route index element={<HomeworkPage /> } />
+  <Route path={'homework10'} element={<Homework10Part2 /> } />
 
 </Routes>
   );
