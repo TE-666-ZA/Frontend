@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import HomeworkPage from "./main-page/src/homework-page";
+import {BrowserRouter} from "react-router-dom";
+import App from "./App";
 
 
 
@@ -11,7 +13,9 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-  <HomeworkPage/>
+    <BrowserRouter>
+    <App/>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
