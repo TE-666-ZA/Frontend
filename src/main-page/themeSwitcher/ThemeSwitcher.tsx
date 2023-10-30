@@ -5,10 +5,18 @@ interface IThemeSwitcher {
     onClick: (value: boolean) => void;
 }
     const ThemeSwitcher = ({onClick}: IThemeSwitcher): JSX.Element => {
-        const [toggled, setToggled] = useState(false);
+        const [toggled, setToggled] = useState(() => {
+            const savedTheme = localStorage.getItem('theme');
+            return savedTheme ? JSON.parse(savedTheme) : false;
+        });
         const handleSwitch = () => {
-            setToggled(prevValue => !prevValue)
-            onClick(toggled)
+            setToggled((prevValue:boolean) => {
+                const newValue = !prevValue;
+                localStorage.setItem('theme',JSON.stringify(newValue));
+                onClick(newValue);
+                return newValue;
+
+            });
         }
 
         useEffect(() => {
