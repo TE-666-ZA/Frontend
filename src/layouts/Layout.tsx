@@ -1,6 +1,6 @@
 import {FC} from "react";
 import {NavLink, Outlet} from "react-router-dom";
-import MainMenu from "../Header/MainMenu";
+import MainMenu from "../mainMenu/MainMenu";
 import MainPage from "../mainPage/MainPage";
 import styles from './layoyt.module.css'
 

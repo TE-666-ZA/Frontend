@@ -1,7 +1,9 @@
 import styles from './mainMenu.module.css';
 import React, {useState} from 'react';
-import ThemeSwitcher from "../themeSwitcher/ThemeSwitcher";
 import {NavLink} from "react-router-dom";
+import ThemeSwitcher from "../themeSwitcher/ThemeSwitcher";
+import CustomButton from "../myButton/CustomButton";
+
 
 
 
@@ -32,7 +34,9 @@ function MainMenu() {
             </nav>
 
             <div>
-                <NavLink to={'homework10'} > homework10 </NavLink>
+
+                <NavLink to={'/'} > <CustomButton text={'Main Page'}  /> </ NavLink>
+                <NavLink to={'homework10'} > <CustomButton text={'Homework 10 part 2'} /> </NavLink>
             </div>
         </div>
     );

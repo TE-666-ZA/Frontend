@@ -3,7 +3,7 @@ import {Route, Routes} from "react-router-dom";
 import Layout from "./layouts/Layout";
 import Homework10Part2 from "./homeworks/homework10Part2/Homework10-part2";
 import MainPage from "./mainPage/MainPage";
-import MainMenu from "./Header/MainMenu";
+import MainMenu from "./mainMenu/MainMenu";
 
 
 

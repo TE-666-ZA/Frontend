@@ -21,6 +21,7 @@ interface IThemeSwitcher {
 
         useEffect(() => {
             document.body.style.backgroundColor = toggled ? '#282c34' : 'white'
+            document.body.style.color = toggled ? '#e7e5e5' : 'black'
         })
 
         return (

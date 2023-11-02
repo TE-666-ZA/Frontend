@@ -4,7 +4,7 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter} from "react-router-dom";
 import App from "./App";
-import MainMenu from "./Header/MainMenu";
+import MainMenu from "./mainMenu/MainMenu";
 
 
 

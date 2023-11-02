@@ -1,8 +1,4 @@
-import styles from './homework-page.module.css';
 import React, {useState} from 'react';
-import ThemeSwitcher from "../../main-page/themeSwitcher/ThemeSwitcher";
-
-
 
 
 function Homework10Part2() {
