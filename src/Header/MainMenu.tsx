@@ -1,11 +1,11 @@
-import styles from './homework-page.module.css';
+import styles from './mainMenu.module.css';
 import React, {useState} from 'react';
 import ThemeSwitcher from "../themeSwitcher/ThemeSwitcher";
 import {NavLink} from "react-router-dom";
 
 
 
-function HomeworkPage() {
+function MainMenu() {
 
     const [toggled, setToggled] = useState(() => {
         const savedTheme = localStorage.getItem('theme');
@@ -38,4 +38,4 @@ function HomeworkPage() {
     );
 }
 
-export default HomeworkPage;
+export default MainMenu;
