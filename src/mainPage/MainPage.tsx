@@ -3,7 +3,7 @@
 
     return (
         <div>
-            <h1> her will bi main page !</h1>
+            <h1> her will be main page !</h1>
         </div>
     )
 

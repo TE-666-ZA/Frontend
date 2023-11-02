@@ -1,21 +1,57 @@
-import React from 'react';
-import {Route, Routes} from "react-router-dom";
-import Layout from "./layouts/Layout";
-import Homework10Part2 from "./homeworks/homework10Part2/Homework10-part2";
-import MainPage from "./mainPage/MainPage";
-import MainMenu from "./mainMenu/MainMenu";
-
-
+import logo from "./logo.svg"
+import { Counter } from "./features/counter/Counter"
+import "./App.css"
 
 function App() {
   return (
-<Routes>
-  <Route path='/' element={<Layout />} />
-  <Route index element={<MainPage /> } />
-  <Route path={'homework10'} element={<Homework10Part2 /> } />
-  <Route path={'/'} element={ <MainMenu /> }/>
-</Routes>
-  );
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <Counter />
+        <p>
+          Edit <code>src/App.tsx</code> and save to reload.
+        </p>
+        <span>
+          <span>Learn </span>
+          <a
+            className="App-link"
+            href="https://reactjs.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            React
+          </a>
+          <span>, </span>
+          <a
+            className="App-link"
+            href="https://redux.js.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Redux
+          </a>
+          <span>, </span>
+          <a
+            className="App-link"
+            href="https://redux-toolkit.js.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Redux Toolkit
+          </a>
+          ,<span> and </span>
+          <a
+            className="App-link"
+            href="https://react-redux.js.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            React Redux
+          </a>
+        </span>
+      </header>
+    </div>
+  )
 }
 
-export default App;
+export default App

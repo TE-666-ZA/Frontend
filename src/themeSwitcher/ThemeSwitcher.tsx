@@ -8,17 +8,15 @@ interface IThemeSwitcher {
         const [toggled, setToggled] = useState(() => {
             const savedTheme = localStorage.getItem('theme');
             return savedTheme ? JSON.parse(savedTheme) : false;
-        });
-        const handleSwitch = () => {
-            setToggled((prevValue:boolean) => {
+        }), handleSwitch = () => {
+            setToggled((prevValue: boolean) => {
                 const newValue = !prevValue;
-                localStorage.setItem('theme',JSON.stringify(newValue));
+                localStorage.setItem('theme', JSON.stringify(newValue));
                 onClick(newValue);
                 return newValue;
 
             });
-        }
-
+        };
         useEffect(() => {
             document.body.style.backgroundColor = toggled ? '#282c34' : 'white'
             document.body.style.color = toggled ? '#e7e5e5' : 'black'
