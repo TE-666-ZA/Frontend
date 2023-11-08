@@ -8,7 +8,9 @@ interface IThemeSwitcher {
         const [toggled, setToggled] = useState(() => {
             const savedTheme = localStorage.getItem('theme');
             return savedTheme ? JSON.parse(savedTheme) : false;
-        }), handleSwitch = () => {
+        }),
+
+            handleSwitch = () => {
             setToggled((prevValue: boolean) => {
                 const newValue = !prevValue;
                 localStorage.setItem('theme', JSON.stringify(newValue));
