@@ -1,0 +1,39 @@
+.container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+
+.picture{
+        justify-content: center;
+        width: 50%;
+        height: auto;
+}
+.text{
+        font-family: "JetBrains Mono Medium";
+        word-spacing: normal;
+        letter-spacing: normal;
+        width: 50%;
+        margin: 20px;
+        font-size: large;
+}
+
+.thinLine {
+        border: 1px solid #000;
+        width: 60%;
+        opacity: 30%;
+}
+
+
+@media (width <= 768px) {
+        .picture {
+                width: 100%;
+                height: auto;
+        }
+
+        .text {
+                font-size: 18px;
+                line-height: 28px;
+                overflow-x: inherit;
+        }
+}

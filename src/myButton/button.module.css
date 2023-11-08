@@ -1,0 +1,24 @@
+.customButton {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Consolas;
+}
+
+
+.customButton:hover {
+    background-color: #0056b3;
+}
+
+.customButton.night:hover {
+    background-color: #540154FF;
+}
+
+.customButton.night{
+    background-color: purple;
+    color: #282c34;
+}
