@@ -4,6 +4,7 @@ import {NavLink} from "react-router-dom";
 import ThemeSwitcher from "../themeSwitcher/ThemeSwitcher";
 import CustomButton from "../myButton/CustomButton";
 import { useAppSelector } from "../app/hooks";
+import NavbarButton from "./navbarButton/NavbarButton";
 
 
 
@@ -21,19 +22,12 @@ function MainMenu() {
                     <div className={styles.toggleDiv}>
                        < ThemeSwitcher />
                     </div>
-                    <span>Homework page</span>
+                    <span>DriftZone Hub</span>
                 </h1>
             </header>
             <nav className={styles.navbar}>
-              navigation
-
+              <NavLink to={'/'} > <NavbarButton text={'Home Page'}  /> </NavLink>
             </nav>
-
-            <div>
-
-                <NavLink to={'/'} > <CustomButton text={'Main Page'}  /> </ NavLink>
-                <NavLink to={'homework10'} > <CustomButton text={'Homework 10 part 2'} /> </NavLink>
-            </div>
         </div>
     );
 }
