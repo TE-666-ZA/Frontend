@@ -1,16 +1,15 @@
 import React, {FC, useState} from 'react';
 import styles from "./button.module.css";
+import { useAppSelector } from "../app/hooks";
 
 const CustomButton: FC<any> = ({ text, active = true, onClick }) =>{
 
-const [toggled, setToggled] = useState (() => {
-    const savedTheme = localStorage.getItem('theme');
-    return savedTheme ? JSON.parse(savedTheme) : false;
-});
+const {nightMode} = useAppSelector(store => store.nightMode)
+
 
     return (
     <button
-        className={`${styles.customButton} ${toggled && styles.night}`}
+        className={`${styles.customButton} ${nightMode && styles.night}`}
         onClick={onClick}
     >{text}
     </button>

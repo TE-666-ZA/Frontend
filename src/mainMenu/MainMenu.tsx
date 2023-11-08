@@ -3,23 +3,23 @@ import React, {useState} from 'react';
 import {NavLink} from "react-router-dom";
 import ThemeSwitcher from "../themeSwitcher/ThemeSwitcher";
 import CustomButton from "../myButton/CustomButton";
+import { useAppSelector } from "../app/hooks";
 
 
 
 
 function MainMenu() {
 
-    const [toggled, setToggled] = useState(() => {
-        const savedTheme = localStorage.getItem('theme');
-        return savedTheme ? JSON.parse(savedTheme) : false;
-    });
-        const handleClick = (switchedValue: boolean) => {
-        setToggled(switchedValue);
-    }
+
+      const {nightMode} = useAppSelector(store => store.nightMode)
+
+        const handleClick = () => {
+
+  }
 
 
     return (
-        <div className={`${styles.container} ${toggled && styles.night}`}>
+        <div className={`${styles.container} ${nightMode && styles.night}`}>
             <header className={styles.header}>
                 <h1>
                     <div className={styles.toggleDiv}>

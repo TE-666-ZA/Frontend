@@ -1,9 +1,11 @@
 import { configureStore, ThunkAction, Action } from "@reduxjs/toolkit"
 import counterReducer from "../features/counter/counterSlice"
+import { toggleSlice } from "../features/toggle/toggleSlice";
 
 export const store = configureStore({
   reducer: {
     counter: counterReducer,
+    nightMode: toggleSlice.reducer
   },
 })
 

@@ -14,6 +14,11 @@
     background-color: #0056b3;
 }
 
+.customButton.night:hover {
+    background-color: #540154FF;
+}
+
 .customButton.night{
-    color: yellow;
+    background-color: purple;
+    color: #282c34;
 }
