@@ -4,7 +4,7 @@ import { useAppDispatch } from "../app/hooks";
 import { toggleNight } from "../features/toggle/toggleSlice";
 
 interface IThemeSwitcher {
-    onClick: (value: boolean) => void;
+    onClick?:  (value: boolean) => void;
 }
     const ThemeSwitcher = ({onClick}: IThemeSwitcher): JSX.Element => {
 
@@ -19,7 +19,9 @@ interface IThemeSwitcher {
                 setToggled((prevValue: boolean) => {
                     const newValue = !prevValue;
                     localStorage.setItem('theme', JSON.stringify(newValue));
-                    onClick(newValue);
+                    if(onClick) {
+                        onClick(newValue);
+                    }
                     return newValue;
                 });
                 dispatch(toggleNight())

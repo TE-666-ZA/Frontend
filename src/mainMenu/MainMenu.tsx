@@ -13,17 +13,13 @@ function MainMenu() {
 
       const {nightMode} = useAppSelector(store => store.nightMode)
 
-        const handleClick = () => {
 
-  }
-
-
-    return (
+       return (
         <div className={`${styles.container} ${nightMode && styles.night}`}>
             <header className={styles.header}>
                 <h1>
                     <div className={styles.toggleDiv}>
-                       < ThemeSwitcher onClick={handleClick} />
+                       < ThemeSwitcher />
                     </div>
                     <span>Homework page</span>
                 </h1>
