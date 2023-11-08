@@ -19,10 +19,14 @@ interface IThemeSwitcher {
 
             });
         };
+
+
         useEffect(() => {
-            document.body.style.backgroundColor = toggled ? '#282c34' : 'white'
-            document.body.style.color = toggled ? '#e7e5e5' : 'black'
-        })
+            localStorage.setItem('theme', JSON.stringify(toggled));
+
+            document.body.style.backgroundColor = toggled ? '#282c34' : 'white';
+            document.body.style.color = toggled ? '#e7e5e5' : 'black';
+        }, [toggled]);
 
         return (
             <div onClick={handleSwitch} className={`${styles.toggle} ${toggled && styles.night}`}>
