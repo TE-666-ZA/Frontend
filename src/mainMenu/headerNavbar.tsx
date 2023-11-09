@@ -5,11 +5,13 @@ import ThemeSwitcher from "../themeSwitcher/ThemeSwitcher";
 import CustomButton from "../customButton/CustomButton";
 import { useAppSelector } from "../app/hooks";
 import NavbarButton from "./navbarButton/NavbarButton";
+import ScrollButton from "../scrollButton/scrollButton";
+import ScrollToTop from "../scrollButton/scrollButton";
 
 
 
 
-function MainMenu() {
+function HeaderNavbar() {
 
 
       const {nightMode} = useAppSelector(store => store.nightMode)
@@ -17,7 +19,7 @@ function MainMenu() {
 
        return (
         <div className={`${styles.container} ${nightMode && styles.night}`}>
-            <header className={styles.header}>
+            <header id={'navbar'} className={styles.header}>
                 <h1>
                     <div className={styles.toggleDiv}>
                        < ThemeSwitcher />
@@ -32,4 +34,4 @@ function MainMenu() {
     );
 }
 
-export default MainMenu;
+export default HeaderNavbar;

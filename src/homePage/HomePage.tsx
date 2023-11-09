@@ -1,4 +1,4 @@
-import styles from "./homePage.module.css";
+import styles from "./pages.module.css";
 import { useAppSelector } from "../app/hooks";
 
 function HomePage() {
@@ -7,7 +7,7 @@ function HomePage() {
 
   return (
     <div className={styles.container}>
-      <h1>Drift motorsport</h1>
+      <h1 id = 'DriftMotorsport'>Drift motorsport</h1>
 
       <img className={styles.picture} src="/src/public/homePage/mainPic.jpg" alt="mainPhoto" />
 
@@ -61,6 +61,8 @@ function HomePage() {
         favorites and can be seen everywhere from grassroots events right up to national competitions.
         You can find more information on <a className={`${styles.link} ${nightMode && styles.night}`}  href={'https://en.wikipedia.org/wiki/Drifting_(motorsport)'} target={'_blank'}> Wikipedia</a>.
        </p>
+
+      <a > here </a>
     </div>
   );
 

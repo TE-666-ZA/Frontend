@@ -4,14 +4,14 @@ import { Provider } from "react-redux"
 import { store } from "./app/store"
 import App from "./App"
 import "./index.css"
-import MainMenu from "./mainMenu/MainMenu";
+import HeaderNavbar from "./mainMenu/headerNavbar";
 import {BrowserRouter} from "react-router-dom";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
       <BrowserRouter >
     <Provider store={store}>
-        <MainMenu />
+        <HeaderNavbar />
       <App />
     </Provider>
       </BrowserRouter>

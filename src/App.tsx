@@ -4,8 +4,7 @@ import {Route, Routes} from "react-router";
 import React from "react";
 import Layout from "./layouts/Layout";
 import HomePage from "./homePage/HomePage";
-import Homework10Part2 from "./homeworks/homework10Part2/Homework10-part2";
-import MainMenu from "./mainMenu/MainMenu";
+import HeaderNavbar from "./mainMenu/headerNavbar";
 
 function App() {
   return (
@@ -14,7 +13,7 @@ function App() {
             <Route path='/' element={<Layout />} />
             <Route index element={<HomePage /> } />
 
-            <Route path={'/'} element={ <MainMenu /> }/>
+            <Route path={'/'} element={ <HeaderNavbar /> }/>
         </Routes>
     </div>
   )

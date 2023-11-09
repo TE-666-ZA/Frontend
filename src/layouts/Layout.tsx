@@ -8,7 +8,7 @@ const Layout: FC = () => {
     console.log('compilation done successful')
     return(
         <div className={styles.container} >
-        <Outlet />
+         <Outlet />
         </div>
     )
 }
