@@ -2,7 +2,7 @@ import styles from './mainMenu.module.css';
 import React, {useState} from 'react';
 import {NavLink} from "react-router-dom";
 import ThemeSwitcher from "../themeSwitcher/ThemeSwitcher";
-import CustomButton from "../myButton/CustomButton";
+import CustomButton from "../customButton/CustomButton";
 import { useAppSelector } from "../app/hooks";
 import NavbarButton from "./navbarButton/NavbarButton";
 
