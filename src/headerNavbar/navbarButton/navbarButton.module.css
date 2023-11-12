@@ -19,6 +19,7 @@
 }
 
 .customButton.night {
-    background-color: purple;
+    background-color: #9933cc;
     color: #282c34;
+    border: 2px solid black
 }

@@ -1,15 +1,20 @@
-import styles from "./pages.module.css";
+import styles from "./style/pages.module.css";
 import { useAppSelector } from "../app/hooks";
 
 function HomePage() {
 
-  const {nightMode} = useAppSelector(state => state.nightMode)
+
+  const { nightMode } = useAppSelector(state => state.nightMode);
+
 
   return (
     <div className={styles.container}>
-      <h1 id = 'DriftMotorsport'>Drift motorsport</h1>
 
-      <img className={styles.picture} src="/src/public/homePage/mainPic.jpg" alt="mainPhoto" />
+
+
+      <h1 id="DriftMotorsport">Drift motorsport</h1>
+
+      <img className={styles.picture} src='https://drive.google.com/uc?export=view&id=1ayyql0ARVV-JcWqJnqMTjvzH7VdNHC0B' alt="main pic" />
 
       <p className={styles.text}>
         Drifting as a motorsport discipline is a fairly new idea,
@@ -21,20 +26,12 @@ function HomePage() {
         but some cars are naturally more set up for the sport than others.
       </p>
 
-      <div className={styles.thinLine}></div>
-
-      <p className={styles.text}>
-        An excellent drift car will usually have a low center of gravity,
-        be rear-wheel drive, and be easy to modify and upgrade. Plus, it'll usually be affordable,
-        as drifters aren't too keen on paying huge sums for a car that's likely to end up clipping a lot
-        of concrete barriers throughout its sporting life. It might be relatively new as a discipline,
-        but drifting already has a huge enthusiast community across the globe, and it shows no sign of stopping.
-        In fact, according to Red Bull, it's the fastest-growing motorsport in the world right now.
-      </p>
+      <div className={styles.thinLine} />
 
       <h1>What is drifting? </h1>
 
-      <img className={styles.picture} src="/src/public/homePage/whatisDriftingPic.jpg" />
+
+      <img className={styles.picture} src="https://drive.google.com/uc?export=view&id=1G0AaKUYs-bXK9zBsbvMp1YBm2N1qk8sg" alt='what is drift pic' />
 
       <p className={styles.text}>
         The basic premise of drifting is initiating controlled oversteer,
@@ -47,22 +44,27 @@ function HomePage() {
         defeat his mafia boss nemesis Takashi in a tight race down a winding mountain road.
       </p>
 
-      <img className={styles.gifSeparator} src="/src/public/homePage/separatorJapanRoad.gif" alt="separator gif" />
+      <img className={styles.gifSeparator} src="https://drive.google.com/uc?export=view&id=1C2e_dJa82Jpbcz2DlG2A1FmbLRqSEkS_" alt="separator gif" />
 
-      <div className={styles.thinLine}></div>
 
       <p className={styles.text}>
         Back in the real world, drifting has become a fiercely contested motorsport, with major competition series
         being run everywhere from New Zealand to Ireland. Competitions add extra layers of difficulty to the art of
         going sideways by scoring how well drivers drift in close proximity to each other, and how well the driver can
-        link multiple drifts together, among other things. The more precise a driver can be in controlling their car's movements,
-        the higher the score. Of course, for every meticulously measured pro-level competition, there are plenty more grassroots events
-        that exist simply for attendees to have as much fun as possible, regardless of their skill level. The cars listed here are among the community's
+        link multiple drifts together, among other things. The more precise a driver can be in controlling their car's
+        movements,
+        the higher the score. Of course, for every meticulously measured pro-level competition, there are plenty more
+        grassroots events
+        that exist simply for attendees to have as much fun as possible, regardless of their skill level. The cars
+        listed here are among the community's
         favorites and can be seen everywhere from grassroots events right up to national competitions.
-        You can find more information on <a className={`${styles.link} ${nightMode && styles.night}`}  href={'https://en.wikipedia.org/wiki/Drifting_(motorsport)'} target={'_blank'}> Wikipedia</a>.
-       </p>
+       <span>
+         You can find more information on <a className={`${styles.link} ${nightMode && styles.night}`}
+                                            href={"https://en.wikipedia.org/wiki/Drifting_(motorsport)"}
+                                            target={"_blank"}> Wikipedia</a>.
+       </span>
+      </p>
 
-      <a > here </a>
     </div>
   );
 

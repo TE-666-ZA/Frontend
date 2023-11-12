@@ -1,8 +1,9 @@
 import React, { FC } from "react";
-import styles from "./button.module.css";
-import { useAppSelector } from "../app/hooks";
+import styles from "./navbarButton.module.css";
+import { useAppSelector } from "../../app/hooks";
 
-const CustomButton: FC<any> = ({ text, active = true, onClick }) => {
+
+const NavbarButton: FC<any> = ({ text, active = true, onClick }) => {
 
   const { nightMode } = useAppSelector(store => store.nightMode);
 
@@ -15,5 +16,5 @@ const CustomButton: FC<any> = ({ text, active = true, onClick }) => {
     </button>
   );
 };
-export default CustomButton;
+export default NavbarButton;
 

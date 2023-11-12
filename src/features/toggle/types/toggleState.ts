@@ -1,3 +1,3 @@
 export default interface ToggleState {
-  nightMode: boolean
+  nightMode: boolean;
 }
