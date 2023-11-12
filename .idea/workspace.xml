@@ -5,30 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f9a47843-19a9-4033-8e6d-0cc739565e0d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/footer/Footer.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/footer/footer.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/headerNavbar/Header.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/headerNavbar/Navbar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/headerNavbar/headerNavbar.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/headerNavbar/navbarButton/NavbarButton.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/headerNavbar/navbarButton/navbarButton.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/BestCars.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/style/pages.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/customButton/CustomButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/customButton/CustomButton.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/customButton/button.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/customButton/button.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/counter/Counter.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/counter/Counter.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/counter/Counter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/counter/Counter.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/counter/counterAPI.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/counter/counterAPI.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/counter/counterSlice.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/counter/counterSlice.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/counter/counterSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/counter/counterSlice.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/toggle/toggleSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/toggle/toggleSlice.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/toggle/types/toggleState.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/toggle/types/toggleState.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/homePage/HomePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/HomePage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/Layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/Layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/themeSwitcher/ThemeSwitcher.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/themeSwitcher/ThemeSwitcher.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/themeSwitcher/ThemeSwitcher.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/themeSwitcher/ThemeSwitcher.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,7 +125,7 @@
       <workItem from="1699752661830" duration="12000" />
       <workItem from="1699752700023" duration="10000" />
       <workItem from="1699753878684" duration="2423000" />
-      <workItem from="1699756329392" duration="624000" />
+      <workItem from="1699756329392" duration="1285000" />
     </task>
     <servers />
   </component>
